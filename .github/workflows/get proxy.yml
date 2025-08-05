@@ -44,14 +44,4 @@ jobs:
         uses: ad-m/github-push-action@v0.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main          git commit -m "Update Proxies ---->" -a
-          git branch -u origin/main
-
-      - name: Pull latest changes
-        run: git pull origin main --rebase
-
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.7.0
-        with:
-  github_token: ${{ secrets.GITHUB_TOKEN }}
-  branch: main
+          branch: main
